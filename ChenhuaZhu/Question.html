@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Question</title>
+    <style type="text/css" media="screen">
+        .navbar {
+            width: 100px;
+            padding-left: 10px;
+            top: 30px;
+            position: fixed;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <div id="header">
+
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    function dog() {
+        this.legs = 4;
+        this.getLegs = function () {
+            return this.legs;
+        }
+    }
+    var fido = new dog();
+    fido.age = 3;
+    console.log(fido.getLegs());
+    console.log(fido.age);
+</script>
+</html>
